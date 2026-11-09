@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project architecture
+
+- Keep the shared author-site shell and homepage in the index route, and render supporting public pages from small leaf routes backed by shared site-page content; this keeps navigation, metadata, and page experiences independently maintainable.
